@@ -2,13 +2,27 @@
 
 A responsive web application connecting betwen me (a personal trainer) and my clients, mainly for assigning workouts and tracking progress. 
 
-Chosen defaults for the MVP:
-- Backend: Node.js + Express (easy to extend) with option to migrate to Postgres or Firebase later
-- Auth & invites: draft flow using email invites (SendGrid recommended)
-- Video hosting: YouTube/Vimeo embeds for quick start; optional cloud storage for uploads
-- Mobile: Expo (React Native) for cross-platform mobile app
+### Technologies Used:
 
-Quick start (Windows PowerShell):
+1- JavaScript:  Main programming language used for both backend (server logic) and frontend (website functionality).
+
+2- Node.js: Runtime environment, allowing JS to run outside of the browser
+
+3- Next.js: Building the frontend of the website
+
+4- npm (Node Package Manager): Manages project dependencies (external libraries and frameworks)
+
+5- JSON (JavaScript Object Notation): Used in package.json to define scripts, dependencies, and project configuration
+
+6- Socket.IO: Library for real-time communication between users and the backend (e.g., live chat feature)
+
+7- Multer: Middleware for handling file uploads (e.g., images, documents) through the backend
+
+8- Auth & invites: draft flow using email invites (SendGrid recommended)
+
+9- Video hosting: YouTube/Vimeo embeds for quick start; optional cloud storage for uploads
+
+### Quick start (Windows PowerShell):
 
 1. Install project dependencies at the repo root (uses npm workspaces):
 
@@ -28,24 +42,10 @@ npm run dev:backend
 npm run dev:web
 ```
 
-4. (mobile removed) This repo now focuses on the web and backend packages. The mobile package was removed to keep the training project focused on the web app.
-
 What I implemented now:
-- Monorepo scaffold with `packages/backend`, `packages/web`, and `packages/mobile` starters
- - Monorepo scaffold with `packages/backend` and `packages/web` starters (mobile removed)
+- Monorepo scaffold with `packages/backend` and `packages/web` starters (mobile removed)
 - Basic Express backend with a health route
 - Next.js web starter page
 - Expo mobile starter app
 
-Next steps (I'll work on these next):
-1. Design data models & API contract for Users, Invites, Exercises, Workouts, Programs, Messages, and Media
-2. Implement onboarding/invite flow (invite API + email sending + signup)
-3. Exercise library CRUD with video embeds
-4. Workout & program composition UI and APIs
-5. Messaging with media (chat)
 
-If you want, I can now:
-- Implement the invite flow end-to-end using SendGrid and a temporary invite token table
-- Or design the Firestore schema instead if you'd prefer Firebase as the backend
-
-Tell me which of the two you'd prefer next: implement invite flow now or finalize the data model/API contract?
