@@ -89,7 +89,7 @@ In your local browser, type localhost:3000 to view the web app
 ### Process images
 
 This was my first interaction with Copilot to create the program:
-![Initial text to Github Copilot](first_interaction.png)
+![Initial text to Github Copilot](images/first_interaction.png)
 
 I gave my error when running the app to Copilot to help me resolve it:
 ![Error handloing with Github Copilot](images/error_handling.png)
