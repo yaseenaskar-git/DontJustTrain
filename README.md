@@ -25,6 +25,7 @@ A responsive web application connecting betwen me (a personal trainer) and my cl
 ### How to run
 
 Prerequisites:
+
 1- Node.js 
 2- npm (comes with Node.js)
 3- Git
@@ -69,12 +70,22 @@ This will start the front end server on localhost:3000
 
 In your local browser, type localhost:3000 to view the web app
 
+### Key features
+
+1. User Authentication & Invitations, sign up and log in using email/password.
+
+2. Chat / Real-Time Messaging
+
+3. Users can upload files (images, documents) using presigned URLs.
+
+4. Program, Workout & Exercise Management
+
+5. Video Hosting, embedded YouTube/Vimeo videos for quick start.
+
+6. Optional cloud storage for direct uploads.
+
+7. Responsive Web Interface
 
 
-What I implemented now:
-- Monorepo scaffold with `packages/backend` and `packages/web` starters (mobile removed)
-- Basic Express backend with a health route
-- Next.js web starter page
-- Expo mobile starter app
 
 
