@@ -7,7 +7,6 @@
   ],
   "scripts": {
     "dev:web": "cd packages/web && npm run dev",
-    "dev:backend": "cd packages/backend && npm run dev",
-    "dev:mobile": "cd packages/mobile && npm start"
+  "dev:backend": "cd packages/backend && npm run dev"
   }
 }

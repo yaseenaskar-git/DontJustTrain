@@ -28,14 +28,11 @@ npm run dev:backend
 npm run dev:web
 ```
 
-4. Start the mobile app (requires Expo CLI) in another terminal:
-
-```powershell
-npm run dev:mobile
-```
+4. (mobile removed) This repo now focuses on the web and backend packages. The mobile package was removed to keep the training project focused on the web app.
 
 What I implemented now:
 - Monorepo scaffold with `packages/backend`, `packages/web`, and `packages/mobile` starters
+ - Monorepo scaffold with `packages/backend` and `packages/web` starters (mobile removed)
 - Basic Express backend with a health route
 - Next.js web starter page
 - Expo mobile starter app
