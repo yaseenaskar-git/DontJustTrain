@@ -1,7 +1,6 @@
-```markdown
 # DontJustTrain
 
-DontJustTrain is a starter monorepo for a trainer-client platform (web + mobile + backend).
+A responsive web application connecting betwen me (a personal trainer) and my clients, mainly for assigning workouts and tracking progress. 
 
 Chosen defaults for the MVP:
 - Backend: Node.js + Express (easy to extend) with option to migrate to Postgres or Firebase later
