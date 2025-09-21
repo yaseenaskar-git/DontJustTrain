@@ -1,0 +1,21 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install root deps
+        run: npm ci
+      - name: Start backend
+        run: |
+          cd packages/backend; npm ci; npm run dev & sleep 2
+      - name: Run backend smoke
+        run: |
+          cd packages/backend; node scripts/smoke.js

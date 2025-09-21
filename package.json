@@ -1,0 +1,13 @@
+{
+  "name": "dontjusttrain",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "cd packages/web && npm run dev",
+    "dev:backend": "cd packages/backend && npm run dev",
+    "dev:mobile": "cd packages/mobile && npm start"
+  }
+}
