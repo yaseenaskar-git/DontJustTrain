@@ -22,25 +22,54 @@ A responsive web application connecting betwen me (a personal trainer) and my cl
 
 9- Video hosting: YouTube/Vimeo embeds for quick start; optional cloud storage for uploads
 
-### Quick start (Windows PowerShell):
+### How to run
 
-1. Install project dependencies at the repo root (uses npm workspaces):
+Prerequisites:
+1- Node.js 
+2- npm (comes with Node.js)
+3- Git
 
-```powershell
+1. Clone the repository
+
+```cmd
+git clone "Insert the URL of this repository here"
+cd DontJustTrain
+```
+
+2. Install dependencies
+
+```cmd
 npm install
 ```
 
-2. Start the backend in one terminal:
+3. Setup environment variables
 
-```powershell
+- Copy .env.local.example into .env.local inside the packages/web folder
+
+- Update values as needed (e.g., API base URL, SendGrid keys, etc.)
+
+4. Run back-end
+in one terminal 
+
+```cmd
 npm run dev:backend
 ```
+This will start the backend server on localhost:4000
 
-3. Start the web app in another terminal:
+5. Run front-end
+in another terminal
 
-```powershell
+```cmd
 npm run dev:web
 ```
+
+This will start the front end server on localhost:3000
+
+6. Run the web app
+
+In your local browser, type localhost:3000 to view the web app
+
+
 
 What I implemented now:
 - Monorepo scaffold with `packages/backend` and `packages/web` starters (mobile removed)
