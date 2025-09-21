@@ -27,7 +27,9 @@ A responsive web application connecting betwen me (a personal trainer) and my cl
 Prerequisites:
 
 1- Node.js 
+
 2- npm (comes with Node.js)
+
 3- Git
 
 1. Clone the repository
@@ -89,15 +91,19 @@ In your local browser, type localhost:3000 to view the web app
 ### Process images
 
 This was my first interaction with Copilot to create the program:
+
 ![Initial text to Github Copilot](images/first_interaction.png)
 
 I gave my error when running the app to Copilot to help me resolve it:
+
 ![Error handloing with Github Copilot](images/error_handling.png)
 
 For other errors, I used chat GPT to chnage Copilot's initial code. This is one example with multer's version:
+
 ![Initial multer version](images/GPT1.png)
 ![Changes multer version](images/GPT2.png)
 
 Keeping/Accepting changes to code from Github Copilot:
+
 ![Keeping Github Copilot changes](images/keeping_changes.png)
 
